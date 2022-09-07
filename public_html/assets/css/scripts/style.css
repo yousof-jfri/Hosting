@@ -1,0 +1,102 @@
+
+
+/* rotate */
+.y-card {
+    transform-style: preserve-3d;
+}
+
+.y-card:hover {
+    transform: rotateY(180deg);
+}
+
+.y-front{
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.y-back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.super-bg {    
+    background: linear-gradient(to right, red 20%, pink 40%, green 60%, yellow 80%);
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 5s linear infinite;
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  /* custom scroll bar */
+  /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(213, 213, 213); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(213, 213, 213); 
+  }
+
+/* fonts */
+.vazir-bold{
+    font-family: 'Vazir-bold';
+}
+
+.vazir-thin {
+    font-family: 'Vazir-thin';
+}
+
+.vazir-fd {
+    font-family: 'Vazir-fd';
+}
+
+.vazir-light {
+    font-family: 'Vazir-light';
+}
+
+
+
+
+@font-face {
+    font-family: 'Vazir-bold';
+    src: url('../fonts/Vazir-Bold-FD-WOL.woff2');
+}
+
+@font-face {
+    font-family: 'Vazir-thin';
+    src: url('../fonts/Vazir-Thin-FD-WOL.woff2');
+}
+
+
+@font-face {
+    font-family: 'Vazir-fd';
+    src: url('../fonts/Vazir-FD-WOL.woff2');
+}
+
+
+@font-face {
+    font-family: 'Vazir-light';
+    src: url('../fonts/Vazir-Light-FD-WOL.eot');
+}
